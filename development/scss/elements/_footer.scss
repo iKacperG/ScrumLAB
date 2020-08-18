@@ -1,23 +1,28 @@
-.footer_container{
+.footer_container {
   display: flex;
-  justify-content: space-between ;
-  align-items: center;
-  background-color: $color-nav;
+  justify-content: space-around;
+
+  background: $color-nav;
+  color: $color-background-screen;
   max-width: 100%;
   padding: 20px;
   line-height: 20px;
   font-family: $font-primary;
-  color: $color-background-screen;
-  height: 300px;
-
+  flex-wrap: nowrap;
 }
-.footer_text {
-  display: flex;
-  justify-content: space-between;
 
-  flex-direction: column;
+h3 {
+  font-size: 1.5rem;
+  margin: 20px 0px 15px 0px;
+}
+
+ul {
+  list-style: disc;
+}
+
+
+.footer_text {
   max-width: 400px;
-  margin-left: 246px;
 
   p {
     max-width: 250px;
@@ -25,54 +30,33 @@
 
 }
 
-.footer_text2{
-  margin-right: -20px;
-}
-.footer_text3{
-  margin-top: 293px;
-  margin-right: 207px;
-}
-  h3 {
-    font-size: 1.5rem;
-    margin: 20px 0px 15px 0px;
-  }
-
-  ul {
-    list-style: disc;
-  }
-
-
-
-
 .footer_copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: $color-text-col;
   padding: 20px;
   text-align: center;
   color: $color-background-screen;
-  width: 100%;
-  height: 70px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
 }
 
 .footer_webpage {
-  color: #E58A20;
-  margin-top:1px;
+  color:  #E58A20;
 }
-.footer_form{
-  display: flex;
-  justify-content: center;
+body > footer > div.footer_copyright > div{
+  margin-top: 15px;
 }
 .footer_input {
-
+  display: inline-block;
   height: 40px;
-  width: 70%;
+
 }
 
 .footer_submit {
   height: 40px;
-  width: 30%;
+
   color: $color-background-screen;
 
 }
@@ -80,6 +64,9 @@
 .footer_socialmedia {
   font-size: 2rem;
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   a:first-child {
     margin-left: 0px;
@@ -90,4 +77,33 @@
     margin-left: 40px;
     color: $color-background-screen;
   }
+}
+body > footer > div.footer_container > div:nth-child(3)>h3{
+  margin-left: 60px;
+}
+body > footer > div.footer_container > div:nth-child(3){
+  margin-right: -121px;
+}
+body > footer > div.footer_container > div:nth-child(1) {
+  margin-right: 58px;
+  margin-left: 4px;
+}
+body > footer > div.footer_container > div:nth-child(3) > div.footer_socialmedia > a:nth-child(3) > i{
+  margin-right: 196px;
+}
+body > footer > div.footer_container > div:nth-child(3) > div.footer_socialmedia > a:nth-child(2) > i{
+  margin-right: 35px;
+}
+body > footer > div.footer_container > div:nth-child(3) > div.footer_form > input.footer_submit.btn{
+  margin-left: -5px;
+  height: 45px;
+}
+body > footer > div.footer_container > div:nth-child(3) > div.footer_socialmedia > a:nth-child(1) > i{
+  margin-top: -55px;
+}
+body > footer > div.footer_container > div:nth-child(3) > div.footer_socialmedia > a:nth-child(2)>i{
+  margin-top: -55px;
+}
+body > footer > div.footer_container > div:nth-child(3) > div.footer_socialmedia > a:nth-child(3) > i{
+  margin-top: -55px;
 }

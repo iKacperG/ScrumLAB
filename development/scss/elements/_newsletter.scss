@@ -3,25 +3,26 @@
 
   height: 160px;
   background-color: $color-nav;
-  border: 2px solid #ffffff;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 250px;
+  padding: 0 45px;
 
   .newstext {
     color: #ffffff;
     font-size: 2.5rem;
+
+
   }
 
   form {
     display: flex;
-    margin-left: 270px;
+
   }
 
   input {
-    width: 250px;
-    height: 50px;
+    width: 200px;
+    height: 44px;
     font-size: 1.5rem;
   }
 
