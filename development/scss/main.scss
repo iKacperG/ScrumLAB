@@ -3,7 +3,13 @@
 //
 // Sass:
 // https://fontawesome.com/how-to-use/on-the-web/using-with/sass
-
+@import "generic/reset";
+@import "settings/fonts";
+@import "settings/colors";
+@import "elements/buttons";
+@import "elements/calltoaction";
+@import "elements/newsletter";
+@import "elements/footer";
 
 body{
   background-color: #BADA55;

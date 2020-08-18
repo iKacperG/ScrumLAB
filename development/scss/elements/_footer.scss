@@ -1,0 +1,109 @@
+.footer_container {
+  display: flex;
+  justify-content: space-around;
+
+  background: $color-nav;
+  color: $color-background-screen;
+  max-width: 100%;
+  padding: 20px;
+  line-height: 20px;
+  font-family: $font-primary;
+  flex-wrap: nowrap;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 20px 0px 15px 0px;
+}
+
+ul {
+  list-style: disc;
+}
+
+
+.footer_text {
+  max-width: 400px;
+
+  p {
+    max-width: 250px;
+  }
+
+}
+
+.footer_copyright {
+  background: $color-text-col;
+  padding: 20px;
+  text-align: center;
+  color: $color-background-screen;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+}
+
+.footer_webpage {
+  color:  #E58A20;
+}
+body > footer > div.footer_copyright > div{
+  margin-top: 15px;
+}
+.footer_input {
+  display: inline-block;
+  height: 40px;
+
+}
+
+.footer_submit {
+  height: 40px;
+
+  color: $color-background-screen;
+
+}
+
+.footer_socialmedia {
+  font-size: 2rem;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a:first-child {
+    margin-left: 0px;
+
+  }
+
+  a {
+    margin-left: 40px;
+    color: $color-background-screen;
+  }
+}
+body > footer > div.footer_container > div:nth-child(3)>h3{
+  margin-left: 60px;
+}
+body > footer > div.footer_container > div:nth-child(3){
+  margin-right: -121px;
+}
+body > footer > div.footer_container > div:nth-child(1) {
+  margin-right: 58px;
+  margin-left: 4px;
+}
+body > footer > div.footer_container > div:nth-child(3) > div.footer_socialmedia > a:nth-child(3) > i{
+  margin-right: 196px;
+}
+body > footer > div.footer_container > div:nth-child(3) > div.footer_socialmedia > a:nth-child(2) > i{
+  margin-right: 35px;
+}
+body > footer > div.footer_container > div:nth-child(3) > div.footer_form > input.footer_submit.btn{
+  margin-left: -5px;
+  height: 45px;
+}
+body > footer > div.footer_container > div:nth-child(3) > div.footer_socialmedia > a:nth-child(1) > i{
+  margin-top: -55px;
+}
+body > footer > div.footer_container > div:nth-child(3) > div.footer_socialmedia > a:nth-child(2)>i{
+  margin-top: -55px;
+}
+body > footer > div.footer_container > div:nth-child(3) > div.footer_socialmedia > a:nth-child(3) > i{
+  margin-top: -55px;
+}
