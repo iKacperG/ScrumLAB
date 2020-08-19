@@ -3,8 +3,8 @@
 //
 // Sass:
 // https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+@import "development/scss/generic/reset";
+@import "development/scss/settings/fonts";
+@import "development/scss/settings/colors";
 
 
-body{
-  background-color: #BADA55;
-}
