@@ -1,56 +1,115 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Zaplanuj jedzonko</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zaplanuj jedzonko</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
-        rel="stylesheet">
-  <link rel="stylesheet" href="./css/app/app.css">
-  <script src="https://kit.fontawesome.com/2d58b80701.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./css/app/elements/app.css">
+    <script src="https://kit.fontawesome.com/2d58b80701.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
 
 <div class="main-container">
 
-  <div class="header-container">
-    <header>
-      <h2>Zaplanuj </h2>
+    <div class="header-container">
+        <header>
+            <h2>Zaplanuj </h2>
 
-      <section class="profile">
-        <div class="name">{name}</div>
-        <i class="fas fa-user-circle"></i>
-      </section>
-    </header>
-  </div>
-
-  <div class="mid-container">
-    <div class="aside-container">
-      <aside>
-        <nav>
-          <ul class="nav-list">
-            <li data-name="desktop"><a href="#">Pulpit</a></li>
-            <li data-name="recipes"><a href="#">Przepisy</a></li>
-            <li data-name="plans"><a href="#">Plany</a></li>
-          </ul>
-        </nav>
-      </aside>
+            <section class="profile">
+                <div class="name">{name}</div>
+                <i class="fas fa-user-circle"></i>
+            </section>
+        </header>
     </div>
 
-    <!-------------------------------------------------->
-    <!--tu wrzucać wszystko-->
-    <div class="main-content">
-      <div class="desktop"></div>
-      <div class="recipes"></div>
-      <div class="plans"></div>
+    <div class="mid-container">
+        <div class="aside-container">
+            <aside>
+                <nav>
+                    <ul class="nav-list">
+                        <li data-name="desktop"><a href="#">Pulpit</a></li>
+                        <li data-name="recipes"><a href="#">Przepisy</a></li>
+                        <li data-name="plans"><a href="#">Plany</a></li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+
+        <!-------------------------------------------------->
+        <!--tu wrzucać wszystko-->
+        <!--Nazwy desktop recipes plans odpowiadają data-name i przy zmianie js się wywali-->
+
+        <div class="main-content">
+            <div class="desktop"></div>
+
+
+            <div class="recipes">
+
+                <!--Nowy przepis! docelowo do wrzucenia do jakiegoś containera z contentem-->
+                <div class="section-new-recipe-container">
+                    <section class="new-recipe-layout">
+                        <div class="new-recipe-header-container">
+                            <h3>Nowy przepis</h3>
+                            <button class="save-quit">Zapisz i zamknij</button>
+                        </div>
+                        <div class="new-recipe-form-container">
+                            <form class="add-recipe-form" id="addform">
+                                <div class="name-container">
+                                    <label>Nazwa przepisu</label>
+                                    <input type="text" class="add-recipe-form-name">
+                                </div>
+                                <div class="description-container">
+                                    <label>Opis przepisu</label>
+                                    <textarea name="description" form="addform" rows="3"></textarea></label>
+                                </div>
+                            </form>
+                            <div class="recipes-instructions-container">
+                                <div class="new-recipe-instructions-container">
+                                    <h2>Instrukcje</h2>
+                                    <div class="new-recipe-instructions-input">
+                                        <label><textarea rows="3"></textarea></label>
+                                        <i class="fas fa-plus-square"></i>
+                                    </div>
+                                    <div class="new-recipe-instructions-output">
+                                        <ol class="new-recipe-instructions-list">
+                                            <li>test</li>
+                                            <!--WYWALIĆ TESTOWE LI, PODPINAĆ NOWE LI PRZY POMOCY JS-->
+                                        </ol>
+                                    </div>
+                                </div>
+
+                                <div class="new-recipe-ingredients-container">
+                                    <h2>Składniki</h2>
+                                    <div class="new-recipe-ingredients-input">
+                                        <label><textarea rows="3"></textarea></label>
+                                        <i class="fas fa-plus-square"></i>
+                                    </div>
+                                    <div class="new-recipe-ingredients-output">
+                                        <ul class="new-recipe-ingredients-list">
+                                            <li>test</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="plans"></div>
     </div>
-    <!--------------------------------------------->
-  </div>
 </div>
+
+<!--------------------------------------------->
+
 <script src="./js/app.js"></script>
 </body>
 </html>

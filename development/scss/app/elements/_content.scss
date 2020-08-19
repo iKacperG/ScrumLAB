@@ -1,0 +1,30 @@
+.main-content {
+  width: 100%;
+
+}
+
+.mid-container {
+
+  display: flex;
+  height: calc(100% - 100px);
+}
+
+.desktop {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+
+.recipes {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.plans {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}

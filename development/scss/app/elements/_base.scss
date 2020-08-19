@@ -1,0 +1,12 @@
+body{
+  line-height: 2;
+}
+
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: white url("../../../images/backgroundpage2.png");
+}
