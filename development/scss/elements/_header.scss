@@ -4,14 +4,16 @@ header {
   align-items: center;
   height: 90px;
   background-color: $color-nav;
+
+
 }
 
-.container {
+.header_container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  width: 100%;
+  max-width: 100%;
 }
 .page-logo{
   margin-left: 25px;
