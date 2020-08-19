@@ -3,9 +3,24 @@
 //
 // Sass:
 // https://fontawesome.com/how-to-use/on-the-web/using-with/sass
-
 @import "development/scss/generic/reset";
-@import "development/scss/settings/colors";
 @import "development/scss/settings/fonts";
-@import "development/scss/elements/header";
+@import "development/scss/settings/colors";
+@import "development/scss/elements/buttons";
+@import "development/scss/elements/calltoaction";
+@import "development/scss/elements/newsletter";
+@import "development/scss/elements/footer";
+@import "development/scss/elements/features";
+@import "development/scss/Elements/header";
+
+
+
+
+
+
+body{
+  background-color: #BADA55;
+}
+
+
 
