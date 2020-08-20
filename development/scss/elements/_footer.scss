@@ -35,8 +35,7 @@ ul {
  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+
   height: 100%;
 
   p {
@@ -44,7 +43,7 @@ ul {
     height: 100%;
   }
   ul{
-
+    margin-left: 15px;
     height: 100%;
   }
 }
@@ -81,7 +80,7 @@ body > footer > div.footer_copyright > div{
 
 .footer_socialmedia {
   font-size: 2rem;
-  width: 100%;
+  width: 180px;
   height: 100%;
   display: flex;
   justify-content: center;
