@@ -31,4 +31,4 @@ gulp.task("sass", function() {
     .pipe(gulp.dest("development/css"))
     .pipe(browserSync.stream());
 });
-gulp.task("default", gulp.series("serve"));
+gulp.task("default", gulp.series("serve","sass"));
