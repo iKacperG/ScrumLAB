@@ -38,8 +38,26 @@
 
 .main-content-centered{
   width:90%;
+  height:95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.main-content-centered-container{
+  width:90%;
   height:90%;
   display: flex;
-  background:white;
-  border:2px dotted $color-text-tab;
+}
+.widgets{
+  display: flex;
+  height:150px;
+  width:100%;
+  justify-content: space-between;
+  i.add-button{
+    font-size:$font-base-size*5;
+
+  }
+
 }
