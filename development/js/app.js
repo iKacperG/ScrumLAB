@@ -27,6 +27,7 @@ loadPage = (content) => {
 
 
 
+
 // ----------------------------- NOTIFICATION WIDGET SECTION ----------------------------------------
 // if clicked on log button or add new recipe ========>
 //need to add display none at start when everything will be set
@@ -59,3 +60,5 @@ const warningNotification = (isLoggedIn, numberOfPlans) => {
 }
 
 // -------------------------------------------------------------------------------------------------
+
+
