@@ -1,0 +1,41 @@
+.header-container {
+  height: 100px;
+  background: $color-text-col;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+header > h2 {
+  color: white;
+  font-family: $font-logo;
+  font-size:$font-base-size*1.5;
+
+  &:after {
+    content: "Jedzonko";
+    color: $color-bottom;
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 1.5rem;
+
+  i {
+    font-size: 3rem;
+    color: orange;
+  }
+
+}
