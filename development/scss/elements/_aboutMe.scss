@@ -1,4 +1,4 @@
-.benefits__container {
+.about__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,23 +10,27 @@
   padding: 40px;
 }
 
-.benefits__text {
+.about__text {
   margin: 20px;
 }
 
-.benefits__image {
-  height:  100%;
+.about__image {
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
+
 }
-.benefits__image img{
- height: 300px;
+
+//.about__image img {
+//  height: 300px;
+//  background-color: black;
   //justify-content: center;
   //align-items: center;
 
-}
+//}
 
 p {
   margin-top: 15px;
