@@ -27,6 +27,26 @@ loadPage = (content) => {
 
 
 
+const addNewRecipeButton = document.querySelector('.add-w-recipe');
+const addNewPlanButton = document.querySelector('.add-w-plan');
+const widgetsContainer = document.querySelector('.widgets');
+const newRecipe = document.querySelector('.section-new-recipe-container');
+
+
+//---------------------------------------------MULTI PURPOSE LOADER, USE FREQUENTLY--------------------------------
+const loadContent = (byWhat,whatToDeload,whatToLoad) => {
+    byWhat.addEventListener('click',function(){
+        whatToDeload.style.display='none';
+        whatToLoad.style.display='flex';
+    })
+}
+//-------------------------------------------------------------------------------------------------------------------
+
+loadContent(addNewRecipeButton,widgetsContainer,newRecipe);
+loadContent(addNewPlanButton,widgetsContainer,newPlan); //TODO add newPlan path to variable set above
+
+
+
 
 // ----------------------------- NOTIFICATION WIDGET SECTION ----------------------------------------
 // if clicked on log button or add new recipe ========>

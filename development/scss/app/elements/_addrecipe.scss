@@ -1,5 +1,14 @@
+.new-recipe-layout{
+  box-sizing: border-box;
+width:100%;
+  padding:20px;
+}
+
 .section-new-recipe-container{
-  width:800px;
+  width:100%;
+  display:none;
+  border:2px dotted $color-text-tab;
+  background:white;
 
   font-family:$font-primary;
   .new-recipe-header-container{
@@ -45,9 +54,9 @@
 
 .recipes-instructions-container {
   display: flex;
-  justify-content: space-around;
-  width: 700px;
-  color: $color-text-col;
+  justify-content: space-between;
+  width: 100%;
+  color: $color-nav;
 
   i {
     font-size: $font-base-size*2;
@@ -64,12 +73,11 @@
     text-transform: uppercase;
   }
 }
-.new-recipe-instructions-input{
+.new-recipe-instructions-input, .new-recipe-ingredients-input{
   padding-top:$font-base-size;
+  display: flex;
 }
-.new-recipe-ingredients-input{
-  padding-top:$font-base-size;
-}
+
 
 
 ol.new-recipe-instructions-list{
@@ -84,3 +92,13 @@ ul.new-recipe-ingredients-list{
 
 }
 
+input{
+  padding:5px;
+}
+textarea{
+  padding:5px;
+}
+
+.new-recipe-instructions-container,.new-recipe-ingredients-container{
+  width:45%;
+}
