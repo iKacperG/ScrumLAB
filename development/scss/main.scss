@@ -12,16 +12,14 @@
 @import "development/scss/elements/footer";
 @import "development/scss/elements/features";
 @import "development/scss/elements/header";
+@import "development/scss/elements/_carousel.scss";
 
 
 
 
 
 
-.application-container{
-  width:100%;
-  height:100vh;
+
+body{
+  background-color: #BADA55;
 }
-
-
-

@@ -24,3 +24,4 @@ loadPage = (content) => {
 
     console.log(content.parentElement.dataset.name);
 }
+
