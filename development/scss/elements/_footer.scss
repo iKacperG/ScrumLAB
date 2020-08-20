@@ -13,7 +13,7 @@
   color: $color-background-screen;
   line-height: 20px;
   font-family: $font-primary;
-  height: 300px;
+  height: 100%;
   width: 100%;
 }
 
@@ -94,6 +94,8 @@ body > footer > div.footer_copyright > div{
     color: $color-background-screen;
   }
 }
-i{
+body > div > footer > div.footer_container > div:nth-child(3) > div.footer_socialmedia > a > i{
   width: 100%;
+  padding:0;
+  font-size: 1rem;
 }
