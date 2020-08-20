@@ -1,0 +1,60 @@
+.aside-container {
+  background: $color-nav;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #262424;
+
+  .nav-list {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    li {
+
+      display: flex;
+      align-items: center;
+      height: 60px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+    }
+
+    .used-li {
+      border-left: 4px solid $color-bottom;
+
+      &:after {
+
+        font-family: "Font Awesome 5 Free", sans-serif;
+        font-weight: 700;
+        content: "\f054";
+        color: $color-bottom;
+        right: 0;
+        position: absolute;
+      }
+    }
+  }
+}
+
+
+a {
+  display: flex;
+  align-items: center;
+  padding: 0 $font-base-size;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 1.5rem;
+
+  &:focus{
+    outline:none;
+  }
+}
