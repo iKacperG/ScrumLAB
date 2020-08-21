@@ -29,6 +29,7 @@ const addNewRecipeButton = document.querySelector('.add-w-recipe');
 const addNewPlanButton = document.querySelector('.add-w-plan');
 const widgetsContainer = document.querySelector('.widgets');
 const newRecipe = document.querySelector('.section-new-recipe-container');
+const newPlan = document.querySelector('.section-new-plan-container');
 
 
 //---------------------------------------------MULTI PURPOSE LOADER, USE FREQUENTLY--------------------------------
@@ -41,39 +42,58 @@ const loadContent = (byWhat, whatToDeload, whatToLoad) => {
 //-------------------------------------------------------------------------------------------------------------------
 
 loadContent(addNewRecipeButton, widgetsContainer, newRecipe);
-// loadContent(addNewPlanButton,widgetsContainer,newPlan); //TODO add newPlan path to variable set above
+loadContent(addNewPlanButton,widgetsContainer,newPlan); //TODO waiting for real plan
 
 
 // ----------------------------- NOTIFICATION WIDGET SECTION ----------------------------------------
 // if clicked on log button or add new recipe ========>
 //need to add display none at start when everything will be set
+liLoaderLite = (whatToLoad,whereToLoad) => {
+  const myElement = document.createElement('li');
+  myElement.classList.add('notification-w',`notification-w-${whatToLoad}`)
+    whereToLoad.appendChild(myElement);
+}
+
+
+const targetUl = document.querySelector('.notification-w-list');
 const infoNotification = (isLoggedIn, numberOfRecipes) => {
-    if (isLoggedIn) {
+    if (isLoggedIn){
+        liLoaderLite('info',targetUl);
         const infoNotification = document.querySelector('.notification-w-info');
+
         let variant = 'przepisów';
-        infoNotification.innerText = `Masz już ${numberOfRecipes} ${variant}, nieźle!`
+        infoNotification.innerHTML = `<i class="widget-icon fas fa-info-circle"></i> Masz już ${numberOfRecipes} ${variant}, nieźle!`
         infoNotification.style.display = 'flex';
     }
 }
-
+infoNotification(true,10);
 const successNotification = (isLoggedIn) => {
     if (isLoggedIn) {
-        let variant = 'przepisów';
+        liLoaderLite('success',targetUl)
         const successNotification = document.querySelector('.notification-w-success');
-        successNotification.innerText = `Świetnie, że jesteś, udanego planowania i smacznego!`
+        successNotification.innerHTML = `<i class="widget-icon fas fa-check-circle"></i>Świetnie, że jesteś, udanego planowania i smacznego!`
         successNotification.style.display = 'flex';
     }
 }
-
+successNotification(true);
 const warningNotification = (isLoggedIn, numberOfPlans) => {
     if (isLoggedIn) {
+        liLoaderLite('warning',targetUl)
         const warningNotification = document.querySelector('.notification-w-warning');
         if (numberOfPlans === 0) {
-            warningNotification.innerText = `Pamiętaj, aby dodać plan!`;
+
+            warningNotification.innerHTML= `<i class="widget-icon fas fa-exclamation-circle"></i> Pamiętaj, aby dodać plan!`;
             warningNotification.style.display = 'flex';
         }
     }
 }
+warningNotification(true,0)
+//PURE TESTS===========>
+
+// successNotification(true)
+
+//----------------------
+
 
 // -------------------------------------------------------------------------------------------------
 
@@ -122,6 +142,7 @@ const recipeDescription = document.querySelector('.add-recipe-form-description')
 // localStorage.clear();
 // const saveNewRecipe = (whatSaves) => {
 //
+
 //     whatSaves.addEventListener('click', function () {
 //
 //         const recipeName = document.querySelector('.add-recipe-form-name').value;
@@ -165,6 +186,7 @@ const saveNewRecipe = (whatSaves) => {
         localStorage.setItem(`recipeStored${index}`, JSON.stringify(myRecipe))
         localStorage.setItem(`index`, JSON.stringify(index))
         console.log(localStorage);
+        loadContent(whatSaves, newRecipe, widgetsContainer);
     })
 }
 

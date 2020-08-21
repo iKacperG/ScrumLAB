@@ -14,27 +14,31 @@ section.notification-w-container {
     align-items: center;
 
 
+
     li.notification-w-info {
       @extend %baseWidgetLiStyling;
       border:2px dotted $color-message-info;
       color:$color-message-info;
+      display: none;
     }
     li.notification-w-warning {
       @extend %baseWidgetLiStyling;
       border:2px dotted $color-message-warning;
       color:$color-message-warning;
+      display: none;
     }
     li.notification-w-success {
       @extend %baseWidgetLiStyling;
       border:2px dotted $color-message-success;
       color:$color-message-success;
+      display: none;
     }
   }
 }
 
 %baseWidgetLiStyling {
 
-  font-size: $font-base-size*1.5;
+  font-size: $font-base-size*1;
   font-weight:700;
   font-family: $font-primary;
   width: 100%;
