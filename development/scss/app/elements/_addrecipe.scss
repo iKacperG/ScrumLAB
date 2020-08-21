@@ -20,6 +20,7 @@ width:100%;
     text-transform:uppercase;
     font-size:$font-base-size*2;
     border-bottom:3px solid $color-text-tab;
+    height:10%;
   }
   .save-quit{
     background: $color-bottom;
@@ -30,6 +31,7 @@ width:100%;
     height:40px;
     border:none;
     box-shadow: 0 0 3px inset white;
+    cursor:pointer;
   }
 }
 .add-recipe-form{
@@ -41,6 +43,7 @@ width:100%;
   width:150px;
     color:$color-nav;
     font-size:$font-base-size*1.3;
+    height:20%;
 
   }
   input.add-recipe-form-name{
@@ -51,15 +54,18 @@ width:100%;
     width:500px;
   }
 }
-
+.new-recipe-form-container{
+  height:90%;
+}
 .recipes-instructions-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
   color: $color-nav;
+  height:65%;
 
   i {
-    font-size: $font-base-size*2;
+    font-size: $font-base-size*3;
     color: $color-message-success;
     padding-left: $font-base-size;
   }
@@ -76,19 +82,25 @@ width:100%;
 .new-recipe-instructions-input, .new-recipe-ingredients-input{
   padding-top:$font-base-size;
   display: flex;
+
 }
 
 
 
 ol.new-recipe-instructions-list{
-  height:300px;
+  height:60%;
   overflow-y: auto;
-
+  li {
+    word-wrap: break-word;
+  }
 }
 
 ul.new-recipe-ingredients-list{
-  height:300px;
+  height:60%;
   overflow-y: auto;
+  li{
+    word-wrap:break-word;;
+  }
 
 }
 
@@ -97,8 +109,18 @@ input{
 }
 textarea{
   padding:5px;
+  resize:none;
 }
 
 .new-recipe-instructions-container,.new-recipe-ingredients-container{
   width:45%;
+  height:100%;
 }
+.new-recipe-instructions-input,.new-recipe-ingredients-input{
+  height:20%;
+}
+
+.instructions-label,.ingredients-label{
+  width:100%;
+}
+
