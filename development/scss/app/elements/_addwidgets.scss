@@ -1,0 +1,26 @@
+
+.add-w-button{
+  background:white;
+  border:2px dotted $color-message-success;
+  height:100%;
+  width:100%;
+  color:$color-message-success;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+  h2{
+    font-size:$font-base-size*1.5;
+    font-weight: 700;
+  }
+}
+
+
+
+.add-w-recipe{
+  width:25%;
+}
+.add-w-plan{
+  width:25%;
+}

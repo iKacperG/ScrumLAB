@@ -24,3 +24,61 @@ loadPage = (content) => {
 
     console.log(content.parentElement.dataset.name);
 }
+
+
+
+const addNewRecipeButton = document.querySelector('.add-w-recipe');
+const addNewPlanButton = document.querySelector('.add-w-plan');
+const widgetsContainer = document.querySelector('.widgets');
+const newRecipe = document.querySelector('.section-new-recipe-container');
+
+
+//---------------------------------------------MULTI PURPOSE LOADER, USE FREQUENTLY--------------------------------
+const loadContent = (byWhat,whatToDeload,whatToLoad) => {
+    byWhat.addEventListener('click',function(){
+        whatToDeload.style.display='none';
+        whatToLoad.style.display='flex';
+    })
+}
+//-------------------------------------------------------------------------------------------------------------------
+
+loadContent(addNewRecipeButton,widgetsContainer,newRecipe);
+loadContent(addNewPlanButton,widgetsContainer,newPlan); //TODO add newPlan path to variable set above
+
+
+
+
+// ----------------------------- NOTIFICATION WIDGET SECTION ----------------------------------------
+// if clicked on log button or add new recipe ========>
+//need to add display none at start when everything will be set
+const infoNotification = (isLoggedIn,numberOfRecipes) => {
+    if(isLoggedIn) {
+        const infoNotification = document.querySelector('.notification-w-info');
+        let variant = 'przepisów';
+        infoNotification.innerText = `Masz już ${numberOfRecipes} ${variant}, nieźle!`
+        infoNotification.style.display='flex';
+    }
+}
+
+const successNotification = (isLoggedIn) => {
+    if(isLoggedIn){
+        let variant = 'przepisów';
+        const successNotification = document.querySelector('.notification-w-success');
+        successNotification.innerText = `Świetnie, że jesteś, udanego planowania i smacznego!`
+        successNotification.style.display='flex';
+    }
+}
+
+const warningNotification = (isLoggedIn, numberOfPlans) => {
+    if(isLoggedIn){
+        const warningNotification = document.querySelector('.notification-w-warning');
+        if(numberOfPlans===0) {
+            warningNotification.innerText = `Pamiętaj, aby dodać plan!`;
+            warningNotification.style.display = 'flex';
+        }
+    }
+}
+
+// -------------------------------------------------------------------------------------------------
+
+

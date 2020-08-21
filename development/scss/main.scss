@@ -12,7 +12,9 @@
 @import "development/scss/elements/footer";
 @import "development/scss/elements/aboutMe";
 @import "development/scss/elements/features";
-@import "development/scss/Elements/header";
+@import "development/scss/elements/header";
+@import "development/scss/elements/_carousel.scss";
+
 
 
 
@@ -23,6 +25,3 @@
 body {
   background-color: #BADA55;
 }
-
-
-

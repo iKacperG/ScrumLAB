@@ -1,0 +1,61 @@
+section.notification-w-container {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+
+
+  ul.notification-w-list {
+    height:100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+
+    li.notification-w-info {
+      @extend %baseWidgetLiStyling;
+      border:2px dotted $color-message-info;
+      color:$color-message-info;
+    }
+    li.notification-w-warning {
+      @extend %baseWidgetLiStyling;
+      border:2px dotted $color-message-warning;
+      color:$color-message-warning;
+    }
+    li.notification-w-success {
+      @extend %baseWidgetLiStyling;
+      border:2px dotted $color-message-success;
+      color:$color-message-success;
+    }
+  }
+}
+
+%baseWidgetLiStyling {
+
+  font-size: $font-base-size*1.5;
+  font-weight:700;
+  font-family: $font-primary;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position:relative;
+}
+
+.widget-icon{
+  padding:0 15px;
+  font-size:$font-base-size*2.5;
+
+}
+
+.widget-close{
+  font-size: $font-base-size*1.5;
+align-self: flex-start;
+  padding:5px;
+  position:absolute;
+  left:100%;
+  transform: translate(-100%,0);
+}
