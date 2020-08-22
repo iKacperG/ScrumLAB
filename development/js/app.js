@@ -173,12 +173,14 @@ const recipeDescription = document.querySelector('.add-recipe-form-description')
 
 const saveNewRecipe = (whatSaves) => {
 
+   let index;
     if(localStorage.getItem('index')!==null){
         index = localStorage.getItem('index');
     }else{
         index=0;
     }
-    whatSaves.addEventListener('click', function () {
+    whatSaves.addEventListener('click', function (e) {
+
         const recipeName = document.querySelector('.add-recipe-form-name').value;
         const recipeDescription = document.querySelector('.add-recipe-form-description').value;
         let myRecipe = new Recipe(recipeName, recipeDescription);

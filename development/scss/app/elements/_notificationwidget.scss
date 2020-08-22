@@ -42,15 +42,17 @@ section.notification-w-container {
   font-weight:700;
   font-family: $font-primary;
   width: 100%;
-
+background:$color-background-screen;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   position:relative;
+  padding:0 5px;
+  box-sizing: border-box;
 }
 
 .widget-icon{
-  padding:0 15px;
+  padding:0 5px;
   font-size:$font-base-size*2.5;
 
 }
