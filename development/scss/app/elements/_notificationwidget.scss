@@ -19,22 +19,106 @@ section.notification-w-container {
       @extend %baseWidgetLiStyling;
       border:2px dotted $color-message-info;
       color:$color-message-info;
-      display: none;
+      transition: 1s;
+
+
+
+      animation: fadeInFromNone 1s ease-out;
+    }
+
+
+
+      100% {
+        display: block;
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInFromNone {
+      0% {
+        display: none;
+        opacity: 0;
+      }
+
+      1% {
+        display: block;
+        opacity: 0;
+      }
+
+      100% {
+        display: block;
+        opacity: 1;
+      }
+
     }
     li.notification-w-warning {
       @extend %baseWidgetLiStyling;
       border:2px dotted $color-message-warning;
       color:$color-message-warning;
-      display: none;
+      animation: fadeInFromNone 1s ease-out;
     }
+
+
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+
+}
+
     li.notification-w-success {
       @extend %baseWidgetLiStyling;
       border:2px dotted $color-message-success;
       color:$color-message-success;
-      display: none;
+      animation: fadeInFromNone 1s ease-out;
     }
+
+
+
+100% {
+     display: block;
+     opacity: 1;
+   }
+
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
   }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+
 }
+
+
+
 
 %baseWidgetLiStyling {
 

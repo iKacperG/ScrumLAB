@@ -73,6 +73,7 @@ const successNotification = (isLoggedIn) => {
         const successNotification = document.querySelector('.notification-w-success');
         successNotification.innerHTML = `<i class="widget-icon fas fa-check-circle"></i>Świetnie, że jesteś, udanego planowania i smacznego!`
         successNotification.style.display = 'flex';
+
     }
 }
 successNotification(true);
